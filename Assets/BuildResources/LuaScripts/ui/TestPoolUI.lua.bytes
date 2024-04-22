@@ -1,0 +1,29 @@
+
+function on_init()
+    print("lua on_init")
+end
+
+function OnOpen()
+    print("lua on_open")
+    local btn_pool_test = self.transform:Find("btn_PoolTest"):GetComponent("Button");
+    local btn_close = self.transform:Find("btn_Close"):GetComponent("Button");
+    
+    btn_pool_test:OnClickSet(function()
+        manager.UIManager:OpenUI("TestPoolUI", "UI", "ui.TestPoolUI")
+    end
+    )
+    btn_close:OnClickSet(function()
+        self:OnClose()
+    end
+    )
+end
+
+function OnClose()
+    print("lua on_close")
+end
+
+function update()
+    print("lua on_update")
+end
+
+print("hello ui")

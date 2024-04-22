@@ -1,0 +1,27 @@
+
+function on_init()
+    print("lua on_init")
+end
+
+function OnOpen()
+    print("lua on_open")
+    local btn_test_net = self.transform:Find("btn_TestNet"):GetComponent("Button");
+    
+    btn_test_net:OnClickSet(
+        function()
+            CS.UnityEngine.Debug.Log("btn_send_an")
+            
+            msg_mgr.get_msg("msg_test"):req_first_test(996, "xiao_ju", "ni_hao", { 0, 0, 7 })
+        end
+    )
+end
+
+function OnClose()
+    print("lua on_close")
+end
+
+function update()
+    print("lua on_update")
+end
+
+print("hello ui")

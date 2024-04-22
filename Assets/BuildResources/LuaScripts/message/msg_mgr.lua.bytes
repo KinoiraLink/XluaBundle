@@ -1,0 +1,55 @@
+
+
+local msg_mgr = {}
+
+local msg_model_list = {} --存放所有模块的表
+
+local msg_responses = {} -- 接收消息的回调列表
+
+--手动添加每个模块的名字
+local msg_name_list =
+{
+    "msg_test",
+}
+
+function msg_mgr.init()
+    --通过模块名寻找模块
+    for k, v in pairs(msg_name_list) do
+        msg_model_list[v] = require('message.' .. v).new();
+    end
+end
+
+function msg_mgr.get_msg(key)
+    if not msg_model_list[key] then
+        Log.Error("脚本不存在：" .. key)
+        return
+    end
+    return msg_model_list[key]
+end
+
+function msg_mgr.register(msg_id, func)
+    if msg_responses[msg_id] then
+        Log.Error("消息已经注册：" .. msg_id)
+        return
+    end
+    msg_responses[msg_id] = func
+end
+
+function ReceiveMessage(msg_id, message)
+    Log.Info("<color=#A0522D>receive:<<<<<<<<<<<<<:id = " .. msg_id .. ":" .. message .. "</color>")
+    if type(msg_responses[msg_id]) == "function" then
+        msg_responses[msg_id](message)
+    else
+        Log.Error("此消息没有ret：", msg_id)
+    end
+end
+
+function msg_mgr.send_msg(msg_id, send_data)
+    local str = Json.encode(send_data);
+    Log.Info("<color=#9400D3>send:<<<<<<<<<<<<<:id = " .. msg_id .. ":" .. str .. "</color>")
+    manager.NetManager:SendMessage(msg_id, str)
+    
+end
+
+return msg_mgr
+

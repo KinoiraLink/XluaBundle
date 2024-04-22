@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 4005539680
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d16f17e359c1af47e1cdfa1507c6251a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: d16f17e359c1af47e1cdfa1507c6251a
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/BuildResources/UI/Res/universal_panel_40.png
+Dependencies: []

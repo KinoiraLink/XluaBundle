@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 1408829948
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0fee8af548233657003e5d4af85354fc
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 0fee8af548233657003e5d4af85354fc
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/BuildResources/Audio/Sound/soundVFX.wav
+Dependencies: []

@@ -1,0 +1,44 @@
+ManifestFileVersion: 0
+CRC: 3391685648
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d99aac1d4193fca4cd58d45b5eb6f1f4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: a41c41a04b68e9e2fd0a29290d0e5974
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: d99aac1d4193fca4cd58d45b5eb6f1f4
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 89
+  Script: {instanceID: 0}
+- Class: 104
+  Script: {instanceID: 0}
+- Class: 157
+  Script: {instanceID: 0}
+- Class: 196
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/BuildResources/Scenes/Test02.unity
+Dependencies: []

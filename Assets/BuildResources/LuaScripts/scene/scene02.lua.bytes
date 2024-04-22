@@ -1,0 +1,26 @@
+
+function on_init()
+    print("lua on_init")
+end
+
+function onactive()
+    print("lua on_active")
+end
+
+function oninactive()
+    print("lua In_active")
+end
+
+function onenter()
+    print("lua open scene02")
+    --因为非成员函数是静态函数所以用 . 而非 : 
+    manager.EntityManager:ShowEntity("Player", "Player", "entity.playerEntity")
+end
+
+function onquit()
+    print("lua quit")
+end
+
+function update()
+    print("lua on_update")
+end

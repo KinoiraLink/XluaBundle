@@ -1,0 +1,11 @@
+﻿
+
+<linker>
+
+	<assembly fullname="Assembly-CSharp">
+	    <type fullname="LuaBehaviour.LuaBehaviour" preserve="all"/>
+		<type fullname="XLuaFramework.Extension.UnityEx" preserve="all"/>
+		
+	</assembly>
+
+</linker>

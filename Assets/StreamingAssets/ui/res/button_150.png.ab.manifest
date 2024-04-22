@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 3048309477
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8065a79029fc486d0fbabae9f2710764
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 8065a79029fc486d0fbabae9f2710764
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/BuildResources/UI/Res/button_150.png
+Dependencies: []

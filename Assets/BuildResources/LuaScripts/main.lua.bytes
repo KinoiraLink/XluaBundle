@@ -1,0 +1,52 @@
+--main 作为 lua 程序的入口 及 存放全局变量
+manager = CS.XLuaFramework.Managers.Manager
+path_util = CS.XLuaFramework.Util.PathUtil
+app_const = CS.XLuaFramework.AppConst
+vector3 = CS.UnityEngine.Vector3
+input = CS.UnityEngine.Input
+key_code = CS.UnityEngine.KeyCode
+time = CS.UnityEngine.Time
+
+Json = require('rapidjson')
+Log = require('log')
+require('class')
+base_msg = require('message.base_msg')
+msg_mgr = require('message.msg_mgr')
+
+local ui_group =
+{
+    "Main",
+    "UI",
+    "Box"
+}
+
+local entity_group =
+{
+    "Player",
+    "Monster",
+    "Effect"
+}
+
+manager.UIManager:SetUIGroup(ui_group)
+manager.EntityManager:SetEntityGroup(entity_group)
+function main()
+
+    print("hello world")
+    CS.UnityEngine.Debug.Log("lua:")
+    manager.UIManager:PrintUI("hello")
+    --manager.UIManager:OpenUI("TestUI", "UI", "ui.TestUI")
+    --manager.UIManager:OpenUI("LoginUI", "UI", "ui.TestUI")
+    --manager.UIManager:OpenUI("SignUI", "Box", "ui.TestUI")
+    --manager.MySceneManager:LoadScene("Test01", "scene.scene01")
+    -- manager.UIManager:OpenUI("TestPoolUI", "UI", "ui.TestPoolUI")
+    --manager.UIManager:OpenUI("TestAudioUI", "UI", "ui.TestAudioUI")
+    
+    msg_mgr.init()
+    manager.NetManager:Init()
+    
+    manager.NetManager:ConnectedServer("127.0.0.1", 8000)
+    
+    manager.UIManager:OpenUI("TestNetUI", "UI", "ui.TestNetUI")
+end
+
+--main()

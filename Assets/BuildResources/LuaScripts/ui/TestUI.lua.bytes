@@ -1,0 +1,20 @@
+
+function on_init()
+    print("lua on_init")
+end
+
+function OnOpen()
+    print("lua on_open")
+    manager.MySceneManager:LoadScene("Test01", "scene.scene01");
+    
+end
+
+function OnClose()
+    print("lua on_close")
+end
+
+function update()
+    print("lua on_update")
+end
+
+print("hello ui")

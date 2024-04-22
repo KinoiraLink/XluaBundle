@@ -1,0 +1,95 @@
+ManifestFileVersion: 0
+CRC: 3533922783
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: luascripts/class.lua.bytes.ab
+      Dependencies: {}
+    Info_1:
+      Name: luascripts/log.lua.bytes.ab
+      Dependencies: {}
+    Info_2:
+      Name: luascripts/main.lua.bytes.ab
+      Dependencies: {}
+    Info_3:
+      Name: scenes/test01.unity.ab
+      Dependencies: {}
+    Info_4:
+      Name: scenes/test02.unity.ab
+      Dependencies: {}
+    Info_5:
+      Name: audio/music/bgm.mp3.ab
+      Dependencies: {}
+    Info_6:
+      Name: audio/sound/soundvfx.wav.ab
+      Dependencies: {}
+    Info_7:
+      Name: luascripts/entity/playerentity.lua.bytes.ab
+      Dependencies: {}
+    Info_8:
+      Name: luascripts/message/base_msg.lua.bytes.ab
+      Dependencies: {}
+    Info_9:
+      Name: luascripts/message/msg_mgr.lua.bytes.ab
+      Dependencies: {}
+    Info_10:
+      Name: luascripts/message/msg_test.lua.bytes.ab
+      Dependencies: {}
+    Info_11:
+      Name: luascripts/scene/scene01.lua.bytes.ab
+      Dependencies: {}
+    Info_12:
+      Name: luascripts/scene/scene02.lua.bytes.ab
+      Dependencies: {}
+    Info_13:
+      Name: luascripts/ui/testaudioui.lua.bytes.ab
+      Dependencies: {}
+    Info_14:
+      Name: luascripts/ui/testnetui.lua.bytes.ab
+      Dependencies: {}
+    Info_15:
+      Name: luascripts/ui/testpoolui.lua.bytes.ab
+      Dependencies: {}
+    Info_16:
+      Name: luascripts/ui/testui.lua.bytes.ab
+      Dependencies: {}
+    Info_17:
+      Name: model/prefabs/player.prefab.ab
+      Dependencies: {}
+    Info_18:
+      Name: ui/prefabs/loadtestprefab.prefab.ab
+      Dependencies:
+        Dependency_0: ui/res/background.png.ab
+    Info_19:
+      Name: ui/prefabs/loginui.prefab.ab
+      Dependencies: {}
+    Info_20:
+      Name: ui/prefabs/signui.prefab.ab
+      Dependencies: {}
+    Info_21:
+      Name: ui/prefabs/testaudioui.prefab.ab
+      Dependencies: {}
+    Info_22:
+      Name: ui/prefabs/testnetui.prefab.ab
+      Dependencies: {}
+    Info_23:
+      Name: ui/prefabs/testpoolui.prefab.ab
+      Dependencies: {}
+    Info_24:
+      Name: ui/prefabs/testui.prefab.ab
+      Dependencies: {}
+    Info_25:
+      Name: ui/res/background.png.ab
+      Dependencies: {}
+    Info_26:
+      Name: ui/res/button_150.png.ab
+      Dependencies: {}
+    Info_27:
+      Name: ui/res/radio_100.png.ab
+      Dependencies: {}
+    Info_28:
+      Name: ui/res/slider_handle.png.ab
+      Dependencies: {}
+    Info_29:
+      Name: ui/res/universal_panel_40.png.ab
+      Dependencies: {}
